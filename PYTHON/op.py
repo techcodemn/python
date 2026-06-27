@@ -1,99 +1,78 @@
-# # # # #ARTHMETIC OPERATIONS:-
-#  NUM1 = int(input("Enter the first number:"))
+# ARITHMETIC OPERATIONS
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
 
-#  NUM2 = int(input("Enter the second number:"))
+print(f"The sum of two numbers is: {num1 + num2}")
+print("The difference of two numbers is:", num1 - num2)
+print("The product of two numbers is:", num1 * num2)
+print("The quotient is:", num1 / num2)
+print("The remainder is:", num1 % num2)
+print("The power is:", num1 ** num2)
 
-# # # print("the sum of two numbers is:", NUM1 + NUM2)
-# # # print("the difference of two numbers is:", NUM1 - NUM2)
-# # # print("the product of two numbers is:", NUM1 * NUM2)
-# # # print("the quotient of two numbers is:", NUM1 / NUM2)
-# # # print("the quotient of two numbers is:", NUM1 % NUM2)
-# # # print("the product of two numbers is:", NUM1 ** NUM2)
+# RELATIONAL OPERATORS
+print("num1 is equal to num2:", num1 == num2)
+print("num1 is not equal to num2:", num1 != num2)
+print("num1 is greater than num2:", num1 > num2)
+print("num1 is less than num2:", num1 < num2)
+print("num1 is greater than or equal to num2:", num1 >= num2)
+print("num1 is less than or equal to num2:", num1 <= num2)
 
-# # # #relational or the comparise operators:-
-# # # print("NUM1 is equal to NUM2:", NUM1 == NUM2)
-# # # print("NUM1 is not equal to NUM2:", NUM1 != NUM2)
-# # # print("NUM1 is greater than NUM2:", NUM1 > NUM2)
-# # # print("NUM1 is less than NUM2:", NUM1 < NUM2)
-# # # print("NUM1 is greater than or equal to NUM2:", NUM1 >= NUM2)
-# # # print("NUM1 is less than or equal to NUM2:", NUM1 <= NUM2)
+# ASSIGNMENT OPERATORS
+base = num1
 
-# # # assignment operators:-
-# # # Make a copy for each operation so output is clear and operations don't interfere.
+num1 = base
+num1 = num2
+print("After num1 = num2:", num1)
 
-# # base = NUM1
+num1 = base
+num1 += num2
+print("After num1 += num2:", num1)
 
-# # NUM1 = base
-# # NUM1 = NUM2
-# # print("After NUM1 = NUM2:", NUM1)
+num1 = base
+num1 -= num2
+print("After num1 -= num2:", num1)
 
-# # NUM1 = base
-# # NUM1 += NUM2
-# # print("After NUM1 += NUM2:", NUM1)
+num1 = base
+if num2 != 0:
+    num1 /= num2
+    print("After num1 /= num2:", num1)
+else:
+    print("Cannot divide by zero")
 
-# # NUM1 = base
-# # NUM1 -= NUM2
-# # print("After NUM1 -= NUM2:", NUM1)
+num1 = base
+if num2 != 0:
+    num1 %= num2
+    print("After num1 %= num2:", num1)
+else:
+    print("Cannot modulo by zero")
 
-# # # Avoid division by zero
-# # NUM1 = base
-# # if NUM2 == 0:
-# #     print("After NUM1 /= NUM2: cannot divide by zero")
-# # else:
-# #     NUM1 /= NUM2
-# #     print("After NUM1 /= NUM2:", NUM1)
+num1 = base
+num1 **= num2
+print("After num1 **= num2:", num1)
 
-# # NUM1 = base
-# # if NUM2 == 0:
-# #     print("After NUM1 %= NUM2: cannot modulo by zero")
-# # else:
-# #     NUM1 %= NUM2
-# #     print("After NUM1 %= NUM2:", NUM1)
+num1 = base
+if num2 != 0:
+    num1 //= num2
+    print("After num1 //= num2:", num1)
+else:
+    print("Cannot floor divide by zero")
 
-# # NUM1 = base
-# # NUM1 **= NUM2
-# # print("After NUM1 **= NUM2:", NUM1)
+# BITWISE OPERATORS (ONLY FOR INTEGERS)
+num1 = base
 
-# # NUM1 = base
-# # if NUM2 == 0:
-# #     print("After NUM1 //= NUM2: cannot divide by zero")
-# # else:
-# #     NUM1 //= NUM2
-# #     print("After NUM1 //= NUM2:", NUM1)
+if isinstance(num1, int) and isinstance(num2, int):
+    print("After num1 &= num2:", num1 & num2)
+    print("After num1 |= num2:", num1 | num2)
+    print("After num1 ^= num2:", num1 ^ num2)
+    print("After num1 >>= num2:", num1 >> num2)
+    print("After num1 <<= num2:", num1 << num2)
+else:
+    print("Bitwise operations only work with integers")
 
-# # NUM1 = base
-# # # Bitwise assignment operators require integers
-# # if isinstance(NUM1, int) and isinstance(NUM2, int):
-# #     NUM1 &= NUM2
-# #     print("After NUM1 &= NUM2:", NUM1)
+# LOGICAL CHECK
+print("num1 < num2 < 0:", num1 < num2 < 0)
 
-# # NUM1 = base
-# # if isinstance(NUM1, int) and isinstance(NUM2, int):
-# #     NUM1 |= NUM2
-# #     print("After NUM1 |= NUM2:", NUM1)
-
-# # NUM1 = base
-# # if isinstance(NUM1, int) and isinstance(NUM2, int):
-# #     NUM1 ^= NUM2
-# #     print("After NUM1 ^= NUM2:", NUM1)
-
-# # NUM1 = base
-# # if isinstance(NUM1, int) and isinstance(NUM2, int):
-# #     NUM1 >>= NUM2
-# #     print("After NUM1 >>= NUM2:", NUM1)
-
-# # NUM1 = base
-# # if isinstance(NUM1, int) and isinstance(NUM2, int):
-# #     NUM1 <<= NUM2
-# #     print("After NUM1 <<= NUM2:", NUM1)
-
-# # NUM1 = base
-# # NUM1 *= NUM2
-# # print("After NUM1 *= NUM2:", NUM1)
-# #   # LOGICAL OPERATORS:-
-
-# print("if the NUM1 < NUM2 < 0:", NUM1 < NUM2 < 0)
-#   m=
-m=5
-for i in 4:
+# LOOP FIX
+m = 5
+for i in range(4):
     print("h")
